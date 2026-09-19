@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Consultation Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body id="top" class="p-3 m-0 border-0 bd-example m-0 border-0">
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/PPET_Professional.jpg" alt="Paradigm Pet Professionals Logo">
+            </a>
+            <div>
+                <h5 class="mb-0">Paradigm Pet Professionals</h5>
+                <small class="company-slogan">
+                    Evidence-based pet care advice for every pet lover
+                </small>
+            </div>
+            <form class="d-flex flex-grow-1 ps-5 pe-3">
+                <input class="form-control me-2"
+                       type="search"
+                       placeholder="Search...">
+
+                <button class="btn btn-outline-primary"
+                        type="submit">
+                    Search
+                </button>
+            </form>
+            <button class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#mainNav">
+
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="dogs.html">
+                            Dogs
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cats.html">
+                            Cats
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="fish.html">
+                            Fish
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<main>
+    <section class="hero">
+        <div class="container">
+            <h1 class="text-center">
+                Contact Us for a Consultation
+            </h1>
+        </div>
+    </section>
+    <section id="contact-section" class="pt-3 pb-3">
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+                <p class="text-center">
+                    Please complete the form below and we will respond within 48 hours.
+                </p>
+                <form action="" method="POST">
+                    <div class="mb-3">
+                        <label for="fullName" class="form-label">Name</label>
+                        <input
+                                type="text"
+                                class="form-control"
+                                id="fullName"
+                                name="name"
+                                placeholder="Your Name"
+                                required>
+                    </div>
+                    <div data-mdb-input-init class="mb-3">
+                        <label class="form-label" for="typePhone">Phone number</label>
+                        <input
+                                type="tel"
+                                id="typePhone"
+                                class="form-control"
+                                name="phone_number"
+                                placeholder="111-222-3456"
+                                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                                required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="userEmail" class="form-label">Email Address</label>
+                        <input
+                                type="email"
+                                class="form-control"
+                                id="userEmail"
+                                name="email"
+                                placeholder="name@example.com"
+                                required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="timezoneDatalist" class="form-label">Select Time Zone</label>
+                        <input class="form-control" list="timezoneOptions" id="timezoneDatalist" placeholder="Type to search time zone..." required>
+                        <datalist id="timezoneOptions">
+                            <option value="UTC (GMT+00:00)">
+                            </option><option value="America/New_York (GMT-05:00)">
+                        </option><option value="America/Chicago (GMT-06:00)">
+                        </option><option value="America/Denver (GMT-07:00)">
+                        </option><option value="America/Los_Angeles (GMT-08:00)">
+                        </option><option value="Europe/London (GMT+00:00)">
+                        </option><option value="Europe/Paris (GMT+01:00)">
+                        </option><option value="Asia/Tokyo (GMT+09:00)">
+                        </option><option value="Australia/Sydney (GMT+11:00)">
+                        </option></datalist>
+                    </div>
+                    <div class="mb-3">
+                        <label for="petsName" class="form-label">Pets Name</label>
+                        <input
+                                type="text"
+                                class="form-control"
+                                id="petsName"
+                                name="name"
+                                placeholder="Pets Name"
+                                required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="petsType" class="form-label">Pet Type</label>
+                        <input
+                                type="text"
+                                class="form-control"
+                                id="petsType"
+                                name="name"
+                                placeholder="Pet Type"
+                                required>
+                    </div>
+                    <div class="mb-3">
+
+                        <label for="ageInput" class="form-label">
+                            Pet Age
+                        </label>
+
+                        <input type="number"
+                               class="form-control mb-2"
+                               id="ageInput"
+                               min="0"
+                               max="26"
+                               value="5">
+
+                        <input type="range"
+                               class="form-range"
+                               min="0"
+                               max="26"
+                               step="1"
+                               value="5"
+                               id="ageSlider">
+
+                        <small id="ageText" class="text-muted">
+                            5 years
+                        </small>
+
+                    </div>
+                    <div class="text-center">
+                        <button class="btn btn-primary px-4">
+                            Send Message
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <br>
+        <div class="text-center mb-4">
+            <a href="#top" class="btn btn-outline-primary">
+                Back to Top
+            </a>
+        </div>
+    </section>
+</main>
+<footer class="py-4">
+    <div class="container text-center">
+        <p>
+            <a href="index.html">Home</a> |
+            <a href="dogs.html">Dogs</a> |
+            <a href="cats.html">Cats</a> |
+            <a href="fish.html">Fish</a> |
+            <a href="contact.html">Contact</a>
+        </p>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+</script>
+<script>
+    const slider = document.getElementById("ageSlider");
+    const input = document.getElementById("ageInput");
+    const ageText = document.getElementById("ageText");
+
+    function updateAge(value) {
+
+        value = parseInt(value);
+
+        if (isNaN(value)) {
+            return;
+        }
+
+        if (value < 0) value = 0;
+        if (value > 26) value = 26;
+
+        slider.value = value;
+        input.value = value;
+
+        if (value === 0) {
+            ageText.textContent = "Under 1 year";
+        }
+        else if (value === 26) {
+            ageText.textContent = "Over 25 years";
+        }
+        else if (value === 1) {
+            ageText.textContent = "1 year";
+        }
+        else {
+            ageText.textContent = value + " years";
+        }
+    }
+
+    slider.addEventListener("input", function () {
+        updateAge(this.value);
+    });
+
+    input.addEventListener("change", function () {
+        updateAge(this.value);
+    });
+
+    updateAge(slider.value);
+</script>
+</body>
+</html>
